@@ -1,0 +1,18 @@
+@use 'sass:math';
+
+// 01. Settings
+@import "common/animations";
+@import "common/spacing";
+@import "common/breakpoints";
+@import "common/colors";
+@import "common/typography";
+
+// 02. Tools
+@import "_tools/animations";
+@import "_tools/attention";
+@import "_tools/breakpoints";
+@import "_tools/functions";
+@import "_tools/placeholder";
+@import "_tools/spacing";
+
+@import "components/video";

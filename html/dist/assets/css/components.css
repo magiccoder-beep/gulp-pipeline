@@ -1,0 +1,91 @@
+.video__trigger {
+  cursor: pointer;
+}
+.video__trigger .icon__play {
+  border-radius: 50% 50%;
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.2s ease-out;
+  transition: all 0.2s ease-out;
+}
+.video__trigger:hover .icon__play {
+  -webkit-box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+          box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  -webkit-transform: scale(1.2);
+          transform: scale(1.2);
+}
+.video__overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 80px;
+  visibility: hidden;
+  opacity: 0;
+  z-index: 99995;
+}
+@media (max-width: 1024px) {
+  .video__overlay {
+    padding: var(--padding-sides-mobile);
+  }
+}
+.video__inner {
+  width: 100%;
+  max-width: 100%;
+  max-width: 1400px;
+  aspect-ratio: 16/9;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.video__container {
+  font-size: 0;
+  position: relative;
+  /*         top: 50%;
+          transform: translateY(-50%); */
+  margin: auto;
+}
+.video__container iframe {
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+}
+.video .btn__wrapper {
+  position: fixed;
+  top: 0;
+  right: 0;
+  padding: 40px;
+  padding-top: 36px;
+}
+@media (max-width: 768px) {
+  .video .btn__wrapper {
+    right: -17px;
+    padding-top: 65px;
+  }
+}
+.video .btn__wrapper .btn {
+  width: 51px;
+  height: 51px;
+}
+/*# sourceMappingURL=data:application/json;charset=utf8;base64,eyJ2ZXJzaW9uIjozLCJzb3VyY2VzIjpbImNvbXBvbmVudHMvX3ZpZGVvLnNjc3MiLCJfdG9vbHMvX2FuaW1hdGlvbnMuc2NzcyIsImNvbW1vbi9fYnJlYWtwb2ludHMuc2NzcyJdLCJuYW1lcyI6W10sIm1hcHBpbmdzIjoiQUFDSTtFQUNJOztBQUdJO0VBQ0k7RUFDQTtFQ2FkO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FEVmM7RUFDSTtFQUNBOztBQU1oQjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7RUFDQTtFQUVBO0VBQ0E7RUFDQTtFQUNBO0VBRUE7RUFFQTtFQUNBO0VBRUE7O0FFY087RUZoQ1g7SUFxQlE7OztBQUlSO0VBQ0k7RUFDQTtFQUVBO0VBQ0E7RUFFQTtFQUNBOztBQUtKO0VBR0k7RUFDQTtBQUNSO0FBQUE7RUFFUTs7QUFFQTtFQUNJO0VBQ0E7RUFDQTs7QUFLSjtFQUNJO0VBQ0E7RUFDQTtFQUNBO0VBQ0E7O0FFNUJHO0VGdUJQO0lBUVE7SUFDQTs7O0FBR0o7RUFDSTtFQUNBIiwiZmlsZSI6ImNvbXBvbmVudHMuY3NzIn0= */
+
+/*# sourceMappingURL=components.css.map */

@@ -1,0 +1,11 @@
+/* ==========================================================================
+   #CONTAINER-OBJECT
+   ========================================================================== */
+
+.container {
+  //@include spacing-sides;
+  width: 100%;
+  max-width: rem($container-max-width);
+  margin-right: auto;
+  margin-left: auto;
+}

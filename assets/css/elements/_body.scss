@@ -1,0 +1,82 @@
+html, body {
+  font-family: $font-body;
+  font-size: $body-font-size;
+  font-weight: $body-font-weight;
+  line-height: $base-font-line-height;
+
+  overflow-x: clip;
+
+  @include respond-until(tablet) {
+    font-size: $body-font-size-mobile;
+    line-height: $base-font-line-height;
+  }
+
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    //height: 100vh;
+    color: $color-body;
+    background-color: $color-background;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  
+    //padding-top: $body-top-padding-offset; // takes account for the fixed header
+
+}
+
+p,
+ul,
+ol,
+blockquote,
+dl dt,
+dd {
+
+    font-size: rem($base-font-size);
+    line-height: rem($body-font-line-height);
+    margin: 0;
+  
+    @include respond-until(tablet) {
+      font-size: rem($base-font-size-mobile);
+    }
+
+}
+
+strong {
+  font-weight: $font-bold;
+}
+
+* {
+  position: relative;
+}
+
+/* When mouse is detected, ALL focused elements have outline removed. */
+body.using-mouse :focus {
+  outline: none;
+}
+
+.sr-only {
+  border: 0 !important;
+  clip: rect(1px, 1px, 1px, 1px) !important;
+  -webkit-clip-path: inset(50%) !important;
+  clip-path: inset(50%) !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  padding: 0 !important;
+  position: absolute !important;
+  width: 1px !important;
+  white-space: nowrap !important;
+}
+
+.sr-only-focusable:focus,
+.sr-only-focusable:active {
+  clip: auto !important;
+  -webkit-clip-path: none !important;
+  clip-path: none !important;
+  height: auto !important;
+  margin: auto !important;
+  overflow: visible !important;
+  width: auto !important;
+  white-space: normal !important;
+}
