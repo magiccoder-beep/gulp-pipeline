@@ -1,0 +1,16 @@
+a {
+	@include basic-transition(color);
+	@include attention {
+		color: $color-base-link;
+	}
+
+	color: $color-base-link;
+	text-decoration: none;
+	display: inline-block;
+	text-underline-offset: 5px;
+
+	&:hover {
+		text-decoration: underline;
+		color: $color-base-link-hover;
+	}
+}

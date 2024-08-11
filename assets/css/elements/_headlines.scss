@@ -1,0 +1,86 @@
+/* ==========================================================================
+   #Headlines
+   ========================================================================== */
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6
+{
+  font-family: $font-headline;
+  font-weight: $font-weight-headline;
+}
+
+h1 {
+  letter-spacing: 1px;
+  text-indent: 1px;
+}
+
+h2 {
+
+}
+
+h3
+{
+  font-size: rem(40);
+  line-height: rem(40);
+
+  @include respond-until(tablet) {
+    font-size: rem(26);
+    line-height: rem(28);
+  }
+}
+
+h4 {
+  font-family: $font-regular;
+  font-weight: $font-weight-bold;
+}
+
+h1,
+h2
+{
+  font-size: rem(60);
+  line-height: rem(60);
+
+  @include respond-until(tablet) {
+    font-size: rem(46);
+    line-height: rem(46);
+  }
+}
+
+h4,
+h5,
+h6
+{
+  font-size: rem(20);
+  line-height: rem(26);
+
+  @include respond-until(tablet) {
+    font-size: rem(20);
+    line-height: rem(22);
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  padding-bottom: 12px;
+  @include transition(all, 0.2s, ease-out);
+}
+
+h2,
+h3,
+h4,
+h5,
+h6 {
+  
+  > span {
+
+  }
+}
