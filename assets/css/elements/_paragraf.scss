@@ -1,9 +1,0 @@
-p {
-  margin: 0;
-  padding-bottom: var(--paragraf-padding-bottom);
-  @include transition(all, 0.2s, ease-out);
-
-  &:last-of-type {
-    padding-bottom: 0;
-  }
-}
